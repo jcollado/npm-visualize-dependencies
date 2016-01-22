@@ -1,0 +1,24 @@
+{
+  "name": "npm-visualize-dependencies",
+  "version": "0.0.0",
+  "description": "Generate graphviz file to visualize dependencies of a package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "visualize",
+    "dependencies"
+  ],
+  "author": "Javier Collado <javier.collado@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "1.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
