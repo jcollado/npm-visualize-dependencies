@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcollado/npm-visualize-dependencies.git"
+  },
   "keywords": [
     "npm",
     "visualize",
@@ -13,6 +17,10 @@
   ],
   "author": "Javier Collado <javier.collado@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcollado/npm-visualize-dependencies/issues"
+  },
+  "homepage": "https://github.com/jcollado/npm-visualize-dependencies#readme",
   "devDependencies": {
     "cz-conventional-changelog": "1.1.5"
   },
