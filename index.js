@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const getDependencies = require('./src')
+const main = require('./src')
 
-getDependencies('.').then(function (dependencies) {
+main().then(function (dependencies) {
   console.log(JSON.stringify(dependencies, null, 2))
 })
