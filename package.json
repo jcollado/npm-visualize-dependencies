@@ -1,7 +1,7 @@
 {
   "name": "npm-visualize-dependencies",
   "version": "0.0.0",
-  "description": "Generate graphviz file to visualize dependencies of a package",
+  "description": "Generate graphviz file to visualize dependencies of a package as installed in the filesystem",
   "main": "index.js",
   "bin": {
     "npm-visualize-dependencies": "index.js"
