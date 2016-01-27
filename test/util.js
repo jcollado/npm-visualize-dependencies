@@ -1,5 +1,7 @@
 'use strict'
 
+const fs = require('fs')
+
 const requireInject = require('require-inject')
 const sinon = require('sinon')
 const test = require('ava').test
@@ -7,6 +9,9 @@ const test = require('ava').test
 function isFileStubs (stat) {
   return {
     fs: {
+      existsSync: fs.existsSync,
+      readdirSync: fs.readdirSync,
+      readFileSync: fs.readFileSync,
       stat
     }
   }
