@@ -5,38 +5,16 @@ const promisify = require('promisify-object')
 const fs = promisify(require('fs'), ['readdir', 'readFile', 'stat'])
 const path = require('path')
 
+const util = require('./util')
+
 const packageFilename = 'package.json'
 const dependenciesDir = 'node_modules'
 
-function isFile (filename) {
-  return fs.stat(filename)
-    .then(
-      function (stats) {
-        return stats.isFile()
-      },
-      function () {
-        return false
-      }
-    )
-}
-
-function isDirectory (dirname) {
-  return fs.stat(dirname)
-    .then(
-      function (stats) {
-        return stats.isDirectory()
-      },
-      function () {
-        return false
-      }
-    )
-}
-
 function isPackageDirectory (dirname) {
-  return isDirectory(dirname)
+  return util.isDirectory(dirname)
     .then(function (dirExists) {
       const filename = path.join(dirname, packageFilename)
-      return dirExists && isFile(filename)
+      return dirExists && util.isFile(filename)
     })
 }
 
@@ -57,7 +35,7 @@ function getPackage (dirname) {
 
 function getDependencies (dirname) {
   const modulesDir = path.join(dirname, dependenciesDir)
-  return isDirectory(modulesDir)
+  return util.isDirectory(modulesDir)
     .then(function (isDir) {
       if (!isDir) {
         return []
