@@ -4,5 +4,6 @@
 # Dependency directory
 node_modules
 
-# Coverage directory used by tools like istanbul
+# Coverage report files
 coverage
+.nyc_output

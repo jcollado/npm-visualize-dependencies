@@ -7,6 +7,7 @@
     "npm-visualize-dependencies": "index.js"
   },
   "scripts": {
+    "cover": "nyc --all ava && nyc report --reporter=html",
     "test": "ava"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "ava": "0.11.0",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.0.3",
+    "nyc": "5.5.0",
     "require-inject": "1.3.0",
     "sinon": "1.17.2",
     "validate-commit-msg": "1.1.1"
@@ -38,6 +40,9 @@
     },
     "ghooks": {
       "commit-msg": "validate-commit-msg"
+    },
+    "nyc": {
+      "include": ["src/*.js"]
     }
   },
   "dependencies": {
