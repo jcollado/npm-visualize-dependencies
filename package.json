@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/jcollado/npm-visualize-dependencies#readme",
   "devDependencies": {
-    "ava": "0.13.0",
+    "ava": "0.14.0",
     "coveralls": "2.11.9",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.2.0",
