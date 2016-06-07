@@ -32,7 +32,7 @@
     "ava": "0.15.2",
     "coveralls": "2.11.9",
     "cz-conventional-changelog": "1.1.6",
-    "ghooks": "1.2.2",
+    "ghooks": "1.2.3",
     "nyc": "6.4.4",
     "require-inject": "1.4.0",
     "sinon": "1.17.4",
